@@ -5,9 +5,9 @@
         <maven>3.0</maven>
     </prerequisites>
 
-    <groupId>net.lightoze.gwt-i18n-server</groupId>
+    <groupId>com.lithium.gwt-i18n-server</groupId>
     <artifactId>gwt-i18n-server</artifactId>
-    <version>0.25-SNAPSHOT</version>
+    <version>0.26-SNAPSHOT</version>
     <packaging>jar</packaging>
 
     <parent>
@@ -37,8 +37,8 @@
         <maven.compiler.encoding>${project.build.sourceEncoding}</maven.compiler.encoding>
 
         <!-- Versions -->
-        <version.gwt>2.6.1</version.gwt>
-        <version.javax.servlet>2.5</version.javax.servlet>
+        <version.gwt>2.8.1</version.gwt>
+        <version.javax.servlet>3.1.0</version.javax.servlet>
         <version.commons-lang3>3.3</version.commons-lang3>
         <version.slf4j>1.7.5</version.slf4j>
         <version.junit>4.11</version.junit>
@@ -62,7 +62,7 @@
         <!-- Web -->
         <dependency>
             <groupId>javax.servlet</groupId>
-            <artifactId>servlet-api</artifactId>
+            <artifactId>javax.servlet-api</artifactId>
             <version>${version.javax.servlet}</version>
             <scope>provided</scope>
         </dependency>
@@ -118,8 +118,8 @@
                     <artifactId>maven-compiler-plugin</artifactId>
                     <version>3.1</version>
                     <configuration>
-                        <source>1.6</source>
-                        <target>1.6</target>
+                        <source>1.8</source>
+                        <target>1.8</target>
                         <excludes>
                             <exclude>**/emul/**/*.java</exclude>
                         </excludes>
@@ -150,7 +150,7 @@
                 <artifactId>gwt-maven-plugin</artifactId>
                 <version>${version.gwt}</version>
                 <configuration>
-                    <sourceLevel>1.6</sourceLevel>
+                    <sourceLevel>1.8</sourceLevel>
                     <productionMode>true</productionMode>
                     <mode>htmlunit</mode>
                     <testTimeOut>300</testTimeOut>
