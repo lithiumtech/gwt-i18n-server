@@ -11,9 +11,9 @@
     <packaging>jar</packaging>
 
     <parent>
-        <groupId>org.sonatype.oss</groupId>
-        <artifactId>oss-parent</artifactId>
-        <version>9</version>
+      <groupId>com.lithium</groupId>
+      <artifactId>lithium-oss-superpom</artifactId>
+      <version>0.9</version>
     </parent>
 
     <name>GWT I18n server-side implementation</name>
