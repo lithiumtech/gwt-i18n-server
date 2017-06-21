@@ -18,7 +18,7 @@
 
     <name>GWT I18n server-side implementation</name>
     <description>A project to make GWT localization available on server side.</description>
-    <url>https://github.com/lightoze/gwt-i18n-server</url>
+    <url>https://github.com/lithiumtech/gwt-i18n-server</url>
     <licenses>
         <license>
             <name>GNU Lesser General Public License v3.0</name>
@@ -45,9 +45,9 @@
     </properties>
 
     <scm>
-        <url>https://github.com/lightoze/gwt-i18n-server</url>
-        <connection>scm:git:https://github.com/lightoze/gwt-i18n-server.git</connection>
-        <developerConnection>scm:git:git@github.com:lightoze/gwt-i18n-server.git</developerConnection>
+        <url>https://github.com/lithiumtech/gwt-i18n-server</url>
+        <connection>scm:git:https://github.com/lithiumtech/gwt-i18n-server.git</connection>
+        <developerConnection>scm:git:git@github.com:lithiumtech/gwt-i18n-server.git</developerConnection>
     </scm>
 
     <developers>
@@ -291,23 +291,6 @@
                                 </configuration>
                             </execution>
                         </executions>
-                    </plugin>
-                    <plugin>
-                        <groupId>org.apache.maven.plugins</groupId>
-                        <artifactId>maven-gpg-plugin</artifactId>
-                        <version>1.4</version>
-                        <executions>
-                            <execution>
-                                <id>sign-artifacts</id>
-                                <phase>verify</phase>
-                                <goals>
-                                    <goal>sign</goal>
-                                </goals>
-                            </execution>
-                        </executions>
-                        <configuration>
-                            <useAgent>true</useAgent>
-                        </configuration>
                     </plugin>
                 </plugins>
             </build>
