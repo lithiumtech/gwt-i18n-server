@@ -10,12 +10,6 @@
     <version>0.26-SNAPSHOT</version>
     <packaging>jar</packaging>
 
-    <parent>
-      <groupId>com.lithium</groupId>
-      <artifactId>lithium-oss-superpom</artifactId>
-      <version>0.9</version>
-    </parent>
-
     <name>GWT I18n server-side implementation</name>
     <description>A project to make GWT localization available on server side.</description>
     <url>https://github.com/lithiumtech/gwt-i18n-server</url>
@@ -49,6 +43,30 @@
         <connection>scm:git:https://github.com/lithiumtech/gwt-i18n-server.git</connection>
         <developerConnection>scm:git:git@github.com:lithiumtech/gwt-i18n-server.git</developerConnection>
     </scm>
+
+    <distributionManagement>
+      <repository>
+        <id>lithium-releases</id>
+        <name>nexus-maven-repo</name>
+        <url>http://nexus.dev.lithium.com/nexus/content/repositories/releases</url>
+      </repository>
+    </distributionManagement>
+    <repositories>
+      <repository>
+        <id>lithium-internal-nexus</id>
+        <name>nexus-maven-repo</name>
+        <url>http://nexus.dev.lithium.com/nexus/content/repositories/releases</url>
+        <snapshots><enabled>false</enabled></snapshots>
+      </repository>
+    </repositories>
+    <pluginRepositories>
+      <pluginRepository>
+        <id>lithium-internal-nexus</id>
+        <name>nexus-maven-repo</name>
+        <url>http://nexus.dev.lithium.com/nexus/content/repositories/releases</url>
+        <snapshots><enabled>false</enabled></snapshots>
+      </pluginRepository>
+    </pluginRepositories>
 
     <developers>
         <developer>
